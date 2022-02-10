@@ -10,7 +10,7 @@ public abstract class Fruits {
         this.ACIDITY_LEVEL = acidityLevel;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -35,3 +35,4 @@ public abstract class Fruits {
                 '}';
     }
 }
+

@@ -7,4 +7,5 @@ public class Apple extends Fruits{
         super(acidityLevel);
         this.name = "Apple";
     }
+
 }
