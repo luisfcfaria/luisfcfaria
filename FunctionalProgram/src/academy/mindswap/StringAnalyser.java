@@ -8,14 +8,10 @@ public class StringAnalyser {
 
 
 
-    public String convert(String stringToAnalyze, String WHAT_TO_REMOVE){
+    public String convert(String stringToAnalyze, String wordToRemove){
         return Arrays.stream(stringToAnalyze.toUpperCase().split(" "))
-                .filter(word -> !word.equalsIgnoreCase(WHAT_TO_REMOVE))
+                .filter(word -> !word.equalsIgnoreCase(wordToRemove))
                 .collect(Collectors.joining( " "));
-
-//        Stream<String> toAnalyze = Arrays.stream(stringToAnalyze.split(" "));
-//        toAnalyze.
-
         }
 
 
