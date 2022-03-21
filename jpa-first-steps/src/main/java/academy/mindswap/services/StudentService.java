@@ -30,7 +30,6 @@ public class StudentService {
     public void printAllStudents() {
         EntityManager em = null;
         try {
-
             em = emf.createEntityManager();
             CriteriaQuery<Student> query = em.getCriteriaBuilder().createQuery(Student.class);
             query.select(query.from(Student.class));
